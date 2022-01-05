@@ -1,0 +1,25 @@
+html,body{
+    font-family: sans-serif;
+    background-image: url(fotoo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.img-wrapper {
+   padding-left: 250px; 
+   padding-top: 380px;
+}
+.btn{
+    height: 40px;
+    width: 150px;
+    border-radius: 17px;
+    background-color: rgb(90, 185, 149);
+    color:white;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: transparent;
+    color: rgb(2, 8, 8);
+}

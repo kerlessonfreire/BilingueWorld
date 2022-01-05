@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* a medida das borda e contada junto com a medida de largura e altura */
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui,-apple-system, helvetical, arial, sans-serif;
+    background: #23232e;
+    height: 100px;
+}
+.logo {
+    color: #fff; 
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-right: 800px;
+}
+.container {    /* centralização do arquivo */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.content {    /* dentro do quadrado direito ex: creat account */
+    background-color: rgb(47, 201, 193);
+    border-radius: 0px;
+    width: 95%;
+    height: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.content::before {  /* dentro do quadrado esquerdo ex: bem-vindo*/
+    content: "";
+    position: absolute;
+    background-color: rgb(43, 236, 201);
+    width: 50%;
+    height: 100%;
+}  
+.title {    /* titulo login */
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+.title-primary {
+   color: rgb(12, 74, 90);
+}
+.title-second {
+    color:rgb(46, 77, 77);
+}
+.description {    /* parte descriva ex:to keep connected with us */
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.description-primary {
+    color: rgb(10, 2, 2);
+}
+.description-second {
+    color: blue;
+}
+.btn {    /* butão  ex: sign up */
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: rgb(8, 8, 1);
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border-width: 0px;
+    margin-top: 1rem;
+}
+ .btn-primary {    /* butão ex: sign in */
+   width: 100px;
+   height: 50px;
+   border-radius: 15px;
+   background-color: transparent;
+   border: 1px solid  #fff;
+   color: rgb(0, 0, 0);
+   font-size: 15px;
+   padding: 10px 50px;
+   text-transform: uppercase;
+   transition: all .35s;
+   transform: translate(-50%, -50%);
+   position: relative;
+   overflow: hidden;
+   line-height: 2px;
+   text-decoration: none;
+   text-align: center;
+   cursor: pointer;
+}
+#btn-primary:before,
+#btn-primary:after{
+position: absolute;
+content: "";
+width: 100%;
+height: 100%;
+top: -100%;
+left: 0;
+background: rgb(77, 194, 163);
+z-index: -1;
+transition: all .35s;
+
+}
+
+#btn-primary:before{
+opacity: .5;
+}
+
+#btn-primary:after{
+transition-delay: .2s;
+}
+
+#btn-primary:hover{
+color: #fff;
+}
+
+#btn-primary:hover:before,
+#btn-primary:hover:after{
+top: 0;
+}
+.btn-second {
+    background-color: rgb(43, 236, 201);
+    border: 1px solid rgb(43, 236, 201);
+}
+.btn-second:hover {
+    background-color: #fff;
+    border: 1px solid rgb(93, 218, 109);
+    color: rgb(93, 218, 109);
+
+}
+.first-content {    /* se separam dividir em duas parte */
+    display: flex;
+}
+.first-column {  /* centralização da parte esqueda seja bem-vindo */
+    text-align: center;
+    flex: 1 auto;
+    z-index: 10;
+}
+.second-column {   /* centralização da parte direita create account */
+    flex: 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form { /* serve pra direcionar o fluxo ,tipo organizar um em baixo do ouro os quadrado */
+    display: flex;
+    flex-direction: column;
+
+}
+.form input {    
+    height: 50px;
+    border: none; /* retira toda a borda */
+    background-color:rgb(93, 218, 109);
+    margin: 8px;
+}

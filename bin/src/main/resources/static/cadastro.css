@@ -1,0 +1,82 @@
+.second-content {
+    position: absolute;
+    display: flex;
+}
+* { 
+    margin: 0; 
+    padding: 0; 
+    font-family:Tahoma; 
+    font-size:9pt;
+    margin: 8px;
+}
+ #divCenter { 
+     background-color: rgb(19, 243, 202);
+     width: 500px; 
+     height: 625px; 
+     left: 50%; 
+     margin: -200px 0 0 -250px; 
+     position: absolute; 
+     top: 32%; 
+ }
+ .linhaprofessor {
+    border-radius: 20px;
+    background-color:rgb(189, 223, 235);
+    border: 1px solid  rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    cursor: pointer;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 60px;
+    padding-right: 60px;
+ }
+ #btn-prof {
+     width: 100px;
+     padding-left: 20px;
+     border-radius: 40px;
+     cursor: pointer;
+     border: 1px solid  rgb(255, 255, 255);;
+     color: rgb(37, 105, 92); /* cor da letra */
+ }
+ #btn-prof:hover {
+    background-color: rgb(93, 218, 143);
+    color: rgb(223, 241, 241);   
+     
+ }
+ #btn-aluno {
+    width: 100px;
+    padding-left: 30px;
+    border-radius: 40px;
+    cursor: pointer;
+    border: 1px solid  rgb(255, 255, 255);;
+    color: rgb(37, 105, 92); /* cor da letra */
+}
+#btn-aluno:hover {
+    background-color: rgb(93, 218, 143);
+    color: rgb(223, 241, 241);  
+}
+ .btn {
+   border-radius: 15px;
+   background-color: transparent;
+   border: 1px solid  #fff;
+   color: rgb(0, 0, 0);
+   font-size: 15px;
+   padding: 10px 50px;
+   cursor: pointer;
+ }  
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(23, 51, 50);
+}
+.title {
+    text-align: center;
+}
+.img-fluid {
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}

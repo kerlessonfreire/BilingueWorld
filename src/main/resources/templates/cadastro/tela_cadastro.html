@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http:ultraq.net.nez/thymeleaf/layout">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.
+    css">
+    <link rel="stylesheet" href="cadastro.css">
+
+   <!--Script-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <title>cadastro</title>
+</head>
+<body>
+    <div class="container"></div>
+        <div class="content first-content"></div>
+        <div class="first-column"></div>
+        <div id="divCenter">
+         <!--   
+        <h2 class="title">seja bem-vindo!</h2>
+            <form id="frmPost" action="">
+            Nome: <input type="text" id="Text0" /><br />
+            Data de nascimento: <input type="date" name="nascimento"> 
+            idade: <input type="text" id="Text1" /><br />
+            meio de contato : <input type="text" id="Text2" /><br />
+            <button class="btn">Envia</button> -->
+          
+              <div class="linhaprofessor">
+                <a href="/cadastroAlunoinicio"> <button class="btn btn-second" id="btn-aluno">Aluno</button></a>
+                <a href="/cadastroProf"><button class="btn btn-second" id="btn-prof">Professor</button></a>
+              </div>
+				 <form th:action="@{/cadastroAlunoadd}" th:object="${usuario}" method="post">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nome</label>
+                  <input type="text" class="form-control" th:field="*{nome}" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira seu nome">
+                  <label for="exampleInputEmail1">Data de nascimento</label> 
+                  <input type="date" class="form-control" th:field="*{nascimento}" name="nascimento" aria-describedby="emailHelp" placeholder="Insira a Data">
+                  <label for="exampleInputEmail1">Idade</label>
+                  <input type="number" class="form-control" th:field="*{idade}" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira sua Idade">
+                  <label for="exampleInputEmail1">Email</label>
+                          <input type="email" class="form-control" th:field="*{email}" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira seu email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Senha</label>
+                  <input type="password" class="form-control" th:field="*{senha}" id="exampleInputPassword1" placeholder="Insira sua Senha">
+                </div>
+                <button type="submit"class="btn btn-second">Cadastrar</button>
+              </form>
+</body>
+</html>

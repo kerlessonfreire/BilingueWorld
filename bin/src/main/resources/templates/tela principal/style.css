@@ -1,0 +1,9 @@
+.row {
+    background-color: rgb(19, 243, 202);
+    width: 500px; 
+    height: 625px; 
+    left: 50%; 
+    margin: -200px 0 0 -250px; 
+    position: absolute; 
+    top: 32%; 
+}

@@ -1,0 +1,232 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+opacity: 0,7;
+}
+
+.logo {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.belingue {
+  left: 20%;
+  margin-top: 5px;
+}
+img,p {
+  display:inline-flex;
+}
+nav {
+display: flex;
+justify-content: space-around;
+align-items: center;
+font-family: system-ui,-apple-system, helvetical, arial, sans-serif;
+background: #23232e;
+height: 100px;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+html,body{
+  font-family: sans-serif;
+  background-image: url(plano\ de\ fundo\ 01-.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 300px;
+}
+::-webkit-scrollbar{
+  width: 16px;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 8px;
+  background: gray;
+}
+
+button{
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  user-select: none;
+}
+
+.principal{
+  width: 100%;
+}
+
+.principal .niveis{
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 32px;
+  justify-content: center;
+  padding: 32px 0px;
+  flex-wrap: wrap;
+}
+
+.principal .niveis .nivel{
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  display: flex;
+  font-size: large;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(124, 33, 209);
+  cursor: pointer;
+  transition: transform .4s;
+}
+
+.principal .niveis .nivel:hover{
+  transform: scale(1.1);
+}
+
+.principal .chat{
+  margin-top: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 255);
+  padding: 8px 16px;
+}
+
+.principal .chat .cabecalho{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.principal .chat .cabecalho label{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.principal .chat .mensagens > label{
+  font-weight: normal;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+.principal .chat .mensagens{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.principal .chat .mensagens .mensagem{
+  width: 20%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.principal .chat .mensagens .mensagem.minha-mensagem{
+  background-color: rgb(255, 255, 255);
+  margin-left: auto;
+  border-radius: 8px 8px 0px 8px;
+}
+
+.principal .chat .mensagens .mensagem.outro-mensagem{
+  background-color: rgb(53, 98, 202);
+  border-radius: 8px 8px 8px 0px;
+}
+
+.principal .chat .mensagens .mensagem .conteudo{
+  word-break: break-all;
+}
+
+.principal .chat .mensagens .mensagem .data{
+  font-size: 10px;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.principal .chat .mensagens .mensagem .nome{
+  font-size: 14px;
+  font-weight: bolder;
+  align-self: flex-start;
+}
+
+.principal .chat .mensagens .mensagem.minha-mensagem + .minha-mensagem .nome{
+  display: none;
+}
+
+.principal .chat .input-group{
+  display: flex;
+  margin-top: auto;
+  gap: 8px;
+}
+
+.principal .chat .input-group button{
+  flex: 1;
+  height: 40px;
+}
+
+.principal .chat .input-group input{
+  flex: 10;
+  padding: 0 8px;
+  height: 40px;
+  border-radius: 4px;
+  border: 0;
+  outline: none;
+}
+
+.principal .cabecalho .estao-digitando{
+  display: flex;
+}
+
+.principal .cabecalho .estao-digitando .ponto{
+  animation: carregando 0.4s alternate infinite backwards;
+}
+
+.principal .cabecalho .estao-digitando .ponto.a{
+  animation-delay: .1s;
+}
+
+.principal .cabecalho .estao-digitando .ponto.b{
+  animation-delay: .2s;
+}
+
+.principal .cabecalho .estao-digitando .ponto.a{
+  animation-delay: .3s;
+}
+
+.oculto{
+  display: none !important;
+}
+
+@keyframes carregando {
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-2px);
+  }
+}

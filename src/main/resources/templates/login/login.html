@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="login.css">
+
+   <!--Script-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <title>login</title>
+
+</head>
+<body>
+  <header>
+        <nav>
+            <h1 class="logo">Belingue World</h1> 
+        </nav>
+     </header>
+    <div class="container">
+        <div class="content first-content"> <!-- isso e primeiro conteudo -->
+               <div class="first-column">
+                   <h2 class="title title-primary">seja bem-vindo!</h2>
+                   <br>
+                   <button class="bnt btn-primary">Cadastre-se</button>
+                   <br>
+                   <br>
+                   <p class="description description-primary">Para de mater conectado conosco conosco</p>
+                   <p class="description description-primary">faça seu Cadastro com suas informações pessoais</p>
+                   <img src="https://img.icons8.com/color/96/000000/usa-circular.png"/>
+                   <img src="https://img.icons8.com/color/96/000000/brazil-circular.png"/>
+                   <img src="https://img.icons8.com/color/96/000000/spain2-circular.png"/>
+                   <br>
+               </div>
+               <div class="second-column">
+                   <!--<h2 class="title title-second">login</h2>
+                   <p class="description description-second">:</p>
+                   <form class="form">
+                       <label for="label-input"></label>
+                          <input type="text" placeholder="nome">
+                       </label>
+                       
+                       <label for="label-input">
+                           <input type="email" placeholder="Email">
+                       </label>
+                       
+                       <label for="label-input">
+                           <input type="password" placeholder="passwold">
+                       </label>
+
+                       <button class="btn btn-second">Entra</button> -->
+                
+                        <form >
+                        <h2 class="title title-second">login</h2>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Nome</label>
+                          <input  class="form-control" type="text"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira seu nome">
+                          <label for="exampleInputEmail1">Email</label>
+                          <input class="form-control" type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira seu email">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Senha</label>
+                          <input  class="form-control" type="password" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="submit"class="btn btn-second">Entrar</button>
+                      </form>
+               </div><!-- second column -->
+
+    </div>
+</body>
+</html>
